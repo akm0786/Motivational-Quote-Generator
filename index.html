@@ -8,6 +8,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" />
 	<link rel="stylesheet" href="">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<style>
 		*{
 			margin: 0;
@@ -105,23 +106,23 @@ outline:none;
 </head>
 <body>
 		<div class="container">
-			<div class="quoteDiv">
-				<div class="textDiv">
+			<div class="quoteDiv" >
+				<div class="textDiv" data-aos="zoom-in-down">
 
 				<i class=" fas fa-quote-left"></i>
-				<h2 id="quote"></h2>
+				<h2 id="quote" ></h2>
 				<h3 id="author" class="author"></h3>
 				</div>
-				<button class="Qbutton" onclick="copyQuote('quote')">Click here to copy the quote</button>
+				<button class="Qbutton"  onclick="copyQuote('quote')">Click here to copy the quote</button>
 				<br><br>
 				<button class="Qbutton "  onclick="randomQuotes()">Click here for next quote</button>	
 			</div>
 
 
 		</div>				
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-
+AOS.init();
  	var quote=	document.getElementById('quote');
  	const author=	document.getElementById('author');
 
